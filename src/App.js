@@ -39,8 +39,8 @@ class App extends Component {
 				<List 
 				getNotes={this.getNotes}
 				notes={notes}
-				 /> 
-				}
+				/> 
+			}
 			</div>
 			);
 		}
