@@ -1,15 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
 import Nav from './components/Nav';
+import List from './components/List';
+import Note from './components/Note';
 
-class App extends React.Component {
+class App extends Component {
   render() {
     return (
       <div className="App">
-        <div>
           <Nav />
-        </div>
+        <List />
+        <Note />
       </div>
       );
   }
