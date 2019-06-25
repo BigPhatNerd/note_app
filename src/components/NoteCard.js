@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
 class NoteCard extends Component {
-  render() {
-    const { note, getNote, deleteNote } = this.props;
+    render() {
+        const { note, getNote, deleteNote } = this.props;
 
-    return (
-      <div className="note-card-container">
+        return (
+            <div className="note-card-container">
         <div className="note-card-title">
           {note.title}
         </div>
@@ -19,8 +19,8 @@ class NoteCard extends Component {
           <i className="material-icons">mode_edit</i>
         </span>
       </div>
-    );
-  }
+        );
+    }
 }
 
 export default NoteCard;
