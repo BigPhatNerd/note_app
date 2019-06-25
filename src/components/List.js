@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import NoteCard from './NoteCard';
+import NoteCard from './components/NoteCard';
 
 class List extends Component {
 
@@ -9,7 +9,7 @@ this.props.getNotes();
 }
 
 	render() {
-		const { notes, getNote } = this.props;
+		const { notes, getNote, deleteNote } = this.props;
 
 		const cards = notes.map((note, index) => {
 			return ( 
@@ -18,6 +18,7 @@ this.props.getNotes();
 				index={index}
 				note={note}
 				getNote={getNote}
+				deleteNote={deleteNote}
 				/>
 		);
 	});
