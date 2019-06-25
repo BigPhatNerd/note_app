@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import NoteCard from './components/NoteCard';
+import NoteCard from './NoteCard';
 
 class List extends Component {
 
